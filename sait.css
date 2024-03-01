@@ -1,0 +1,346 @@
+.wrapper {
+    max-width: 994px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/* меню */
+
+nav .wrapper {
+    position: relative;
+    overflow: hidden;
+}
+ .header_row, .header_info, .header_box, .main
+ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+.header_box 
+{
+    margin: 25px;
+    font-size: 1.1rem;
+    font-family: "Montserrat", sans-serif;
+}
+.header_icon {
+    margin-right: 6px;
+}
+.header_logo {
+    font-size: 1.8rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #7794FD;
+    text-shadow: 2px 2px 3px #3532CC;
+    margin-left: 4%;
+    
+}
+
+nav{
+    background-color: #7794FD;
+    font-family: "Montserrat", sans-serif;
+    color: aliceblue;
+    font-weight: bold;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3%;
+    list-style-type: none;
+}
+
+ li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+ }
+
+ li a:hover{
+    text-decoration: underline;
+ }
+
+ .menuToggle {
+    padding: 15px 40px;
+    display: none;
+    cursor: pointer;  
+ }
+
+
+/* форма */
+
+main {
+    background-image: url("ref/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+}
+
+
+
+h1{
+    color: aliceblue;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 60%;
+    padding-left: 30px;
+    font-size: 2.7rem;
+    text-shadow: 2px 2px 2px black; 
+}
+
+
+ form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 52px 30px 52px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 35px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+ }
+
+ .form {
+    margin-right: 5%;
+ }
+
+input, textarea {
+    padding: 6%;
+    margin-bottom: 5%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+}
+
+
+form button {
+    padding: 20px;
+    background-color: #3532CC;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    text-shadow: 2px 2px 2px black;
+}
+
+form button:hover, form button:focus {
+    background-color: #7794FD;
+}
+
+::placeholder {
+    color: black;
+}
+
+form h2 {
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    align-self: center;
+}
+
+/* услуги */
+.title {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #7794FD;
+    text-shadow: 2px 2px 3px #3532CC;
+    margin-left: 20%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5%;
+}
+
+section .wrapper  {
+    overflow: visible;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #7794FD;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    width: 40%;
+    margin-right: 3%;
+}
+
+.imageCard {
+    background-color: #7794FD;
+    padding: 12px;
+    border-radius: 30px;
+}
+
+.imageCard img {
+    width: 100%;
+}
+
+.contentCard{
+    background-color: aliceblue;
+    min-height: 225px;
+    border-radius: 0px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    align-self: center;
+}
+
+.buton {
+    background-color: #7794FD;
+    font-size: 1.3rem;
+    margin-bottom: -10%;
+    margin-top: 10%;
+    padding: 10px 30px;
+    align-self: center;
+    border-radius: 15px;
+}
+
+
+.buton a{
+    font-size: 1.1rem;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: none;
+}
+
+.buton:hover {
+    background-color: #3532CC;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+    box-shadow: 6px 6px 8px rgba(0,0,0,0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media - запросы */
+
+ @media screen and (max-width: 600px) {
+    
+    .header_row, .header_info{
+        display: inline-block;  
+    }
+    
+    .header_icon {
+        float: left;  
+    }
+    .header_value {
+        width: 100%;
+    }
+
+    .navbar ul{
+        display: none;
+        margin-top: 10px;
+        
+    }
+    .navbar ul.active{
+        display: block;
+        margin-top: 10px;
+        
+    }
+    .navbar li{
+     
+        margin-top: 10px;
+    }
+
+    .menuToggle {
+        padding: 10px 40px;
+        display: inline-block;
+    }
+
+    form{
+        width: 70%;
+    }
+
+    .title {
+        font-size: 1.2rem;
+        margin-left: 0%;
+    }
+    .third, .second {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+ }
+
+
+ @media screen and (max-width: 850px) {
+    .main {
+        display: block;
+    }
+
+    input, textarea {
+        padding: 6%;
+        margin-bottom: 5%;
+       
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        margin-bottom: 0px;
+        margin-left: 5%;
+        font-size: 2rem;
+    }
+    form{
+        width: 75%;
+        margin-left: 5%;
+    }
+ }
+
+
+ @media screen and (min-width: 600px) and (max-width: 1150px) {
+    .third {
+        display: none;
+    }
+
+    .contentCard h3{
+        font-size: 1.2rem;
+    }
+
+    .title {
+        font-size: 1.7rem;
+        margin-left: 15%;
+    }
+
+    .buton {
+        padding: 5px 20px;
+    }
+ }
