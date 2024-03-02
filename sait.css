@@ -251,7 +251,7 @@ h3 {
 /* media - запросы */
 
  @media screen and (max-width: 600px) {
-    
+    /* адаптивка меню */
     .header_row, .header_info{
         display: inline-block;  
     }
@@ -287,11 +287,14 @@ h3 {
         width: 70%;
     }
 
+    /* адаптивка карточке */
+
     .title {
         font-size: 1.2rem;
         margin-left: 0%;
     }
-    .third, .second {
+
+    .card:nth-last-child(-n+2){
         display: none;
     }
 
@@ -303,6 +306,8 @@ h3 {
 
 
  @media screen and (max-width: 850px) {
+   
+   /* адаптивка для формы */
     .main {
         display: block;
     }
@@ -327,7 +332,8 @@ h3 {
 
 
  @media screen and (min-width: 600px) and (max-width: 1150px) {
-    .third {
+    /* адаптивка карточке */
+    .card:last-child{
         display: none;
     }
 
