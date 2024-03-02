@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="sait.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,42 +89,65 @@
     </main>
     <!-- Услуги -->
     <section>
-        <div class="wrapper  ind">
-            <div class="title"><h2>Предоставляемые услуги</h2></div>
-            <div class="content">
-                
+        <div class="title" align="center"><h2>Предоставляемые услуги</h2></div>
+            
+
+        <div class="swiper-container mySwiper wrapper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="card">
+                      <div class="imageCard"><img src="ref/chpu.png" alt=""></div>
+                      <div class="contentCard">
+                         <h3>Токарная обработка на ЧПУ</h3>
+                           <div class="buton"><a href="#">Подробнее</a></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="card">
+                      <div class="imageCard"><img src="ref/tokar.png" alt=""></div>
+                      <div class="contentCard">
+                         <h3>Токарная обработка</h3>
+                           <div class="buton"><a href="#">Подробнее</a></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
                 <div class="card">
-                    <div class="imageCard"><img src="ref/chpu.png" alt=""></div>
+                    <div class="imageCard"><img src="ref/frez.png" alt=""></div>
                     <div class="contentCard">
-                        <h3>Токарная обработка на ЧПУ</h3>
-                        <div class="buton"><a href="#">Подробнее</a></div>
+                       <h3>Фрезерная обработка</h3>
+                         <div class="buton"><a href="#">Подробнее</a></div>
                     </div>
                 </div>
-                        
-                 <div class="card">
-                         <div class="imageCard"><img src="ref/tokar.png" alt=""></div>
-                        <div class="contentCard">
-                            <h3>Токарная обработка на ЧПУ</h3>
-                            <div class="buton"><a href="#">Подробнее</a></div>
-                        </div>
-                 </div>
-                        
-                    <div class="card">
-                        <div class="imageCard"><img src="ref/frez.png" alt=""></div>
-                        <div class="contentCard">
-                           <h3>Токарная обработка на ЧПУ</h3>
-                             <div class="buton"><a href="#">Подробнее</a></div>
-                        </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card ">
+                    <div class="imageCard"><img src="ref/frez.png" alt=""></div>
+                    <div class="contentCard">
+                       <h3>Фрезерная обработка</h3>
+                         <div class="buton"><a href="#">Подробнее</a></div>
                     </div>
+                </div>
             </div>
-        </div>
+            <div class="swiper-slide">
+                <div class="card ">
+                    <div class="imageCard"><img src="ref/frez.png" alt=""></div>
+                    <div class="contentCard">
+                       <h3>Токарная обработка на ЧПУ</h3>
+                         <div class="buton"><a href="#">Подробнее</a></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+           <div class="swiper-pagination"></div> 
+          </div>
     </section>
-    
-
-    <p>dsfgdfgsdg
-        sdgfsdfgsfg</p>
-    <p>dsfgdfgsdg
-        sdgfsdfgsfg</p>
     <footer></footer>
 </body>
+<script src="swiper-bundle.min.js"></script>
+<script src="swiper.js"></script>
+
 </html>
