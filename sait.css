@@ -198,7 +198,7 @@ h3 {
 }
 
 
-.buton a{
+.buton a, .text p, .spans span{
     font-size: 1.1rem;
     color: aliceblue;
     font-weight: bold;
@@ -217,12 +217,37 @@ h3 {
     cursor: grab;
 }
 
+
+.aboutUs {
+    background-image: url('ref/group.png');
+    background-size: cover ;
+    background-position: center;
+    height: 50vh;
+    margin-top: 5%;
+    border-radius: 30px;
+}
+
+.text p {
+    text-align: center;
+    padding-top: 10%;
+    font-size: 1.4rem;
+} 
+.spans span {
+    display: inline-block;
+    width: 30%;
+    margin-top: 5%;
+    font-size: 1.4rem;
+}
+.spans {
+    /* display: flexbox;
+    justify-content: space-between; */
+    text-align: center;
+}
 /* map */
 
 .map {
     margin-top: 5%;
     height: 50vh;
-
 }
 
 
@@ -266,6 +291,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin: -2% 0 1% 6%;
 }
 
@@ -367,12 +393,17 @@ section {
 
     /* адаптивка футера */
     
-    .box p{
+    .box p, .spans span, .text p{
         font-size: 1rem;
     }
     .box {
         width: 50%;
     }
+
+    .spans span {
+        width: 50%;
+    }
+
 
  }
 
@@ -419,9 +450,6 @@ section {
         font-size: 1.7rem;
     }
 
-    .buton {
-        padding: 5px 20px;
-    } 
 
     .swiper-navBtn{
         display: none;
