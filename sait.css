@@ -23,7 +23,7 @@
 .header_icon {
     margin-right: 6px;
 }
-.header_logo {
+.header_logo, .box span {
     font-size: 1.8rem;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
@@ -217,8 +217,57 @@ h3 {
     cursor: grab;
 }
 
+/* map */
+
+.map {
+    margin-top: 5%;
+    height: 50vh;
+
+}
 
 
+
+/* footer */
+footer {
+    background-color: #CDD8FF;
+}
+
+.conteiner {
+    display: flex;
+    padding: 5% 0 5% 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 25%;
+    height: 23vh;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+    
+}
+
+.box:first-child{
+    padding-top: 2%;
+}
+
+.box:last-child{
+    border-right: none;
+}
+
+.fotIcon {
+    margin-top: 25%;
+    margin-bottom: 10%; 
+}
+.soc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2% 0 1% 6%;
+}
 
 
 /* swiper */
@@ -314,6 +363,15 @@ section {
 
     .title {
         font-size: 1.2rem;
+    }
+
+    /* адаптивка футера */
+    
+    .box p{
+        font-size: 1rem;
+    }
+    .box {
+        width: 50%;
     }
 
  }
