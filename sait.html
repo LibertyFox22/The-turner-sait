@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>КСПК.Ру</title>
+    <link rel="icon" href="ref/icon.png">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="sait.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<script defer src="https://api-maps.yandex.ru/2.1/?apikey=c6a96e73-bfb3-4dda-9259-cfb9db11ecd3&lang=ru_RU"></script>
+<script defer src="swiper-bundle.min.js"></script>
+<script defer src="swiper.js"></script>
+<script defer src="validation.js"></script>
+<script defer src="sait.js"></script>
+
 </head>
 <body>
     <!-- шапка -->
@@ -27,7 +35,7 @@
                             <img src="ref/adres.png" alt="">
                         </div>
                         <address class="header_value">
-                            г. Кыштым ул. Металлистов д. 1А
+                            г. Кыштым ул. Огнеупорная д. 2А
                         </address>
                     </div>
                     <div class="header_box">
@@ -49,9 +57,9 @@
             <div class="menuToggle">Меню</div>
             <div class="navbar">
                     <ul>
-                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#services">Услуги</a></li>
                     <li><a href="#preimush">Преимущества</a></li>
-                    <li><a href="#">Примеры работ</a></li>
+                    <li><a href="#photo">Примеры работ</a></li>
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#contacts">Контакты</a></li>
                     </ul>
@@ -69,14 +77,18 @@
             </div>
 
             <div class="form">
-                <form action="">
+                <form action="#" class="formSelf">
                     <h2>Оставьте заявку для <br> 
                         расчёта стоимости</h2>
-                    <input type="text" name="name" placeholder="Имя" class="input">
-                    <input type="email" name="email" placeholder="E-mail" class="input">
-                    <input type="tel" name="tel" placeholder="Телефон" class="input">
+                        <!-- required pattern="[а-я]+ -->
+                    <input type="text" name="name" id="inpName" placeholder="Имя*" class="input" ">
+                    <span class="fail"></span>
+                    <input type="email" name="email" id="email" placeholder="E-mail" class="input">
+                    <span class="fail"></span>
+                    <input type="tel" name="tel" id="tel" placeholder="Телефон*" class="input" >
+                    <span class="fail"></span>
                     <textarea name="dop" id="dop" cols="30" rows="5" placeholder="Дополнительная информация" class="inputar"></textarea>
-                <button>Отправить</button>
+                    <button id="formBtn" type="submit">Отправить</button>
                 </form>
             </div>
             </div>
@@ -84,7 +96,7 @@
     </main>
     <!-- Услуги -->
     <section>
-        <div class="title" align="center"><h2>Предоставляемые услуги</h2></div>
+        <div class="title" align="center"><h2 id="services">Предоставляемые услуги</h2></div>
             
 
         <div class="swiper-container mySwiper wrapper">
@@ -177,6 +189,21 @@
         
     </section>
 
+    <section>
+        <div class="wrapper">
+            <div class="title" align="center">
+                <h2 id="photo">Примеры работ</h2>
+            </div>
+            <div class="photo-collection">
+                <img src="ref/primer1.png" alt="">
+                <img src="ref/primer2.png" alt="">
+                <img src="ref/primer3.png" alt="">
+                <img src="ref/primer5.png" alt="">
+                <img src="ref/primer4.png" alt="">
+                
+            </div>
+        </div>
+    </section>
 
     <section>
         <div id="map" class="map">
@@ -207,15 +234,9 @@
                     +7(900) 000-00-00</div>
                 <div class="box">
                     <div class="fotIcon"><img src="ref/fotAdres.png" alt="mail"></div>
-                    г. Кыштым ул. <br> Металлистов д. 1А</div>
+                    г. Кыштым ул. <br> Огнеупорная д. 2А</div>
             </div>
         </div>
 </footer>
 </body>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=c6a96e73-bfb3-4dda-9259-cfb9db11ecd3&lang=ru_RU">
-
-</script>
-<script src="swiper-bundle.min.js"></script>
-<script src="swiper.js"></script>
-<script src="sait.js"></script>
 </html>

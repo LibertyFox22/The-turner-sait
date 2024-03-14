@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     max-width: 994px;
     margin: 0 auto;
@@ -102,9 +106,32 @@ h1{
 
 input, textarea {
     padding: 6%;
-    margin-bottom: 5%;
+    margin-top: 5%;
     font-family: "Montserrat", sans-serif;
     font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+#name {
+	margin-top: 0;
+}
+
+input:focus {
+	outline: none;
+}
+
+.input-success {
+	border: 3px solid #09c372;
+}
+
+.input-error {
+	border: 3px solid #ff3860;
+}
+
+.fail {
+	color:#fdfdfd;
+	background-color: rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
 }
 
 
@@ -118,6 +145,7 @@ form button {
     font-family: "Montserrat", sans-serif;
     border: none;
     text-shadow: 2px 2px 2px black;
+		margin-top: 5%
 }
 
 form button:hover, form button:focus {
@@ -239,10 +267,27 @@ h3 {
     font-size: 1.4rem;
 }
 .spans {
-    /* display: flexbox;
-    justify-content: space-between; */
     text-align: center;
 }
+
+/* photo-collection */
+
+.photo-collection {
+
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.photo-collection img {
+    width: 32%;
+}
+.photo-collection img:nth-child(5){
+    width: 65%;
+}
+
 /* map */
 
 .map {
@@ -348,6 +393,7 @@ section {
 
 /* media - запросы */
 
+
  @media screen and (max-width: 600px) {
     /* адаптивка меню */
     .header_row, .header_info{
@@ -391,6 +437,12 @@ section {
         font-size: 1.2rem;
     }
 
+    /* адаптивка преимуществ */
+    .spans span {
+        width: 50%;
+    }
+
+
     /* адаптивка футера */
     
     .box p, .spans span, .text p{
@@ -400,9 +452,7 @@ section {
         width: 50%;
     }
 
-    .spans span {
-        width: 50%;
-    }
+    
 
 
  }
@@ -435,6 +485,15 @@ section {
     .swiper-navBtn{
         display: none;
     }
+
+
+    .photo-collection img {
+        width: 48%;
+    }
+    .photo-collection img:nth-child(5){
+        width: 100%;
+    }
+
  }
 
 
@@ -456,4 +515,15 @@ section {
     }
  }
 
+ @media screen and (max-width: 435px) {
+    .photo-collection img {
+        width: 46%;
+    }
+    
+    /* .photo-collection img:nth-child(5){
+        display: none;
+    } */
+
+    
+}
 
