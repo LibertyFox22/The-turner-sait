@@ -79,14 +79,15 @@ main {
 
 
 
-h1{
+.head_line h1{
     color: aliceblue;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    margin-bottom: 60%;
+    margin-bottom: 80%;
     padding-left: 30px;
     font-size: 2.7rem;
     text-shadow: 2px 2px 2px black; 
+    margin-right: 1rem;
 }
 
 
@@ -132,6 +133,21 @@ input:focus {
 	color:#fdfdfd;
 	background-color: rgba(0, 0, 0, 0.2);
     font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.fail a{
+	color:#fdfdfd;
+	background-color: rgba(0, 0, 0, 0.2);
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+#checkbox {
+    scale: 1.5;
+    
 }
 
 
@@ -307,6 +323,7 @@ footer {
     padding: 5% 0 5% 0;
     box-sizing: border-box;
     flex-wrap: wrap;
+    font-family: "Montserrat", sans-serif;
 }
 
 .box {

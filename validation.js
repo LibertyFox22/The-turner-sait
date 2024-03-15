@@ -1,7 +1,7 @@
 let form = document.querySelector('.formSelf');
 let inputName = document.getElementById('inpName');
-let inputEmail = document.getElementById('email');
 let inputPhone = document.getElementById('tel');
+let check = document.getElementById('checkbox');
 let fail = document.querySelectorAll('.fail');
 
 let formattedInputValue = '';
@@ -11,11 +11,11 @@ let formattedInputValue = '';
 form.onsubmit = function( event) {
    event.preventDefault();
    let name = inputName.value;
-   let email = inputEmail.value;
    let phone = inputPhone.value;
    num = phone.length;
 
    checkEmpty(phone, name);
+   isChecked(check)
    
    
 }
@@ -99,5 +99,17 @@ const chechPhoneLenght =(input) =>{
       inputPhone.classList.remove('input-error')
       inputPhone.classList.add('input-success')
 
+   }
+}
+
+function isChecked(check) {
+   if (!check.checked) {
+      fail[3].style.color = '#ff3860';
+      check.style.outline = '1px solid #ff3860';
+   }
+   else {
+      console.log('df4')
+      check.style.removeProperty('outline');
+      fail[3].style.removeProperty('color');
    }
 }
