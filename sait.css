@@ -469,8 +469,6 @@ section {
         width: 50%;
     }
 
-    
-
 
  }
 
@@ -478,6 +476,11 @@ section {
  @media screen and (max-width: 850px) {
    
    /* адаптивка для формы */
+   .head_line h1 {
+    margin-bottom: 10%;
+   }
+
+
     .main {
         display: block;
     }
@@ -536,11 +539,5 @@ section {
     .photo-collection img {
         width: 46%;
     }
-    
-    /* .photo-collection img:nth-child(5){
-        display: none;
-    } */
-
-    
 }
 

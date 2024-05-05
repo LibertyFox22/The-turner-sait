@@ -31,9 +31,9 @@ inputPhone.oninput = function() {
    
 }
 
-inputName.addEventListener('input',()=> {
-   inputName.value = inputName.value.replace(/[^а-я]/,'');
-});
+// inputName.addEventListener('input',()=> {
+//    inputName.value = inputName.value.replace(/[^а-я]/,'');
+// });
 
 
 function mask (inputNumbersValue) {

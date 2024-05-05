@@ -1,0 +1,45 @@
+.order {
+    display: flex;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.text {
+    width: 60%;
+
+}
+.imor {
+    margin-left: 10%;
+    margin-top: -7%;
+}
+
+#sec {
+    margin-bottom: -3rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    background-color: #EBEEF1;
+    border-radius: 30px;
+    padding: 0.5rem 2rem 0.5rem 1.8rem;
+    width: 30%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    
+}
+.button:hover{
+    box-shadow: 2px 3px 3px grey;
+    background-color: #7794FD;
+    font-weight: bold;
+    
+}
+a:hover{
+    color: aliceblue;
+    font-weight: bold;
+}
